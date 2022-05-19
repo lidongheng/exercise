@@ -81,4 +81,12 @@ function quickSort2 (Arr) {
   console.log(Arr)
 }
 
-quickSort2([2,8,9,3,0,4,5])
+function insertSort(Arr) {
+  for (var i = 1; i < Arr.length; i++) {
+    for (var j = i - 1; j>=0; j--) {
+      if (Arr[i] > Arr[j]) {
+        swap(Arr[i], Arr[j])
+      }
+    }
+  }
+}
