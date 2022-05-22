@@ -100,5 +100,15 @@ function shellSort (Arr) {
   console.log(Arr)
 }
 
-shellSort([4,2,8,0,5,1])
+// shellSort([4,2,8,0,5,1])
 
+var arr = [1, 2, 3, 4]
+function sum (a, b, c, d) {
+  console.log(a, b, c, d)
+  for (let i = 0; i < d.length; i++) {
+    d[i] = d[i] * 2
+  }
+  return a + b
+}
+
+var result = arr.reduce(sum, 50)
